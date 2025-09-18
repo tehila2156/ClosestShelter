@@ -1,0 +1,17 @@
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Dal_Repository_Infrastracture\bin\Debug\net8.0\Dal_Repository_Infrastracture.deps.json
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Dal_Repository_Infrastracture\bin\Debug\net8.0\Dal_Repository_Infrastracture.runtimeconfig.json
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Dal_Repository_Infrastracture\bin\Debug\net8.0\Dal_Repository_Infrastracture.dll
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Dal_Repository_Infrastracture\bin\Debug\net8.0\Dal_Repository_Infrastracture.pdb
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Dal_Repository_Infrastracture\bin\Debug\net8.0\core.dll
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Dal_Repository_Infrastracture\bin\Debug\net8.0\core.pdb
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Dal_Repository_Infrastracture\obj\Debug\net8.0\Dal_Repository_Infrastracture.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Dal_Repository_Infrastracture\obj\Debug\net8.0\Dal_Repository_Infrastracture.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Dal_Repository_Infrastracture\obj\Debug\net8.0\Dal_Repository_Infrastracture.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Dal_Repository_Infrastracture\obj\Debug\net8.0\Dal_Repository_Infrastracture.AssemblyInfo.cs
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Dal_Repository_Infrastracture\obj\Debug\net8.0\Dal_Repository_Infrastracture.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Dal_Repository_Infrastracture\obj\Debug\net8.0\Dal_Repo.8173E375.Up2Date
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Dal_Repository_Infrastracture\obj\Debug\net8.0\Dal_Repository_Infrastracture.dll
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Dal_Repository_Infrastracture\obj\Debug\net8.0\refint\Dal_Repository_Infrastracture.dll
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Dal_Repository_Infrastracture\obj\Debug\net8.0\Dal_Repository_Infrastracture.pdb
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Dal_Repository_Infrastracture\obj\Debug\net8.0\Dal_Repository_Infrastracture.genruntimeconfig.cache
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Dal_Repository_Infrastracture\obj\Debug\net8.0\ref\Dal_Repository_Infrastracture.dll

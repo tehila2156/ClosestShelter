@@ -1,0 +1,17 @@
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Bll_Servises\bin\Debug\net8.0\Bll_Servises.deps.json
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Bll_Servises\bin\Debug\net8.0\Bll_Servises.dll
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Bll_Servises\bin\Debug\net8.0\Bll_Servises.pdb
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Bll_Servises\bin\Debug\net8.0\core.dll
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Bll_Servises\bin\Debug\net8.0\Dal_Repository_Infrastracture.dll
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Bll_Servises\bin\Debug\net8.0\Dal_Repository_Infrastracture.pdb
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Bll_Servises\bin\Debug\net8.0\core.pdb
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Bll_Servises\obj\Debug\net8.0\Bll_Servises.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Bll_Servises\obj\Debug\net8.0\Bll_Servises.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Bll_Servises\obj\Debug\net8.0\Bll_Servises.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Bll_Servises\obj\Debug\net8.0\Bll_Servises.AssemblyInfo.cs
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Bll_Servises\obj\Debug\net8.0\Bll_Servises.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Bll_Servises\obj\Debug\net8.0\Bll_Serv.A98EB5EE.Up2Date
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Bll_Servises\obj\Debug\net8.0\Bll_Servises.dll
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Bll_Servises\obj\Debug\net8.0\refint\Bll_Servises.dll
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Bll_Servises\obj\Debug\net8.0\Bll_Servises.pdb
+C:\Users\User\Desktop\תהילה\לימודים\#c\שעורי בית\פרוייקט_סיכום_מיקומים\Bll_Servises\obj\Debug\net8.0\ref\Bll_Servises.dll

@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8" />
+    <title>ניהול מקומות מוגנים</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        body {
+            font-family: Arial;
+            direction: rtl;
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 3px;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+
+        #map {
+            height: 300px;
+            margin-top: 20px;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 6px;
+            background: #f9f9f9;
+        }
+
+        .results {
+            margin-top: 15px;
+        }
+
+        .review-images img {
+            max-width: 150px;
+            margin: 5px;
+            border-radius: 6px;
+            border: 1px solid #999;
+        }
+    </style>
+</head>
+<body>
+    <h2>🛡️ מערכת לניהול מקומות מוגנים</h2>
+
+    <div id="map"></div>
+    <p><strong>כתובת שנבחרה:</strong> <span id="selected-address">---</span></p>
+
+    <!-- טופס הוספת מקום מוגן -->
+    <div class="box">
+        <h3>➕ הוספת מקום מוגן</h3>
+        <form onsubmit="sendAddress(); return false;">
+            <label>סוג מבנה</label>
+            <input type="text" id="structureTypeName" required />
+            <label>רמת המבנה</label>
+            <input type="text" id="structureTypeLevel" required />
+            <label>פתוח 24/7?</label>
+            <select id="isAlwaysOpen">
+                <option value="true">כן</option>
+                <option value="false">לא</option>
+            </select>
+            <label>איש קשר</label>
+            <input type="text" id="contactPerson" required />
+            <label>טלפון</label>
+            <input type="text" id="phone" required />
+            <label>SMS</label>
+            <input type="text" id="sms" />
+            <label>קיבולת</label>
+            <input type="number" id="capacity" min="1" required />
+            <label>אנשים נוכחיים</label>
+            <input type="number" id="currentPeople" min="0" required />
+            <button type="submit">📤 שלח כתובת</button>
+        </form>
+    </div>
+
+    <!-- טופס הוספת חוות דעת -->
+    <div class="box">
+        <h3>📝 הוספת חוות דעת</h3>
+        <form onsubmit="sendReview(); return false;">
+            <label>כתובת</label>
+            <input type="text" id="reviewAddressLocation" required />
+            <label>תיאור חוות דעת</label>
+            <textarea id="reviewText" rows="3" required></textarea>
+            <label>תמונות (שמות קבצים מופרדים בפסיק)</label>
+            <input type="text" id="reviewImages" />
+            <button type="submit">📤 שלח חוות דעת</button>
+        </form>
+    </div>
+
+    <!-- כפתור והצגת מקומות קרובים -->
+    <div class="box">
+        <h3>📍 המקומות הקרובים ביותר</h3>
+        <button onclick="getClosestAddresses()">📍 הצג מקומות קרובים</button>
+        <div class="results" id="closestAddresses"></div>
+    </div>
+
+    <!-- כתובות מהחודש האחרון + הצגת חוות דעת -->
+    <div class="box">
+        <h3>📅 כתובות מהחודש האחרון (כולל חוות דעת)</h3>
+        <button onclick="getRecentAddresses()">📥 הצג כתובות</button>
+        <div class="results" id="recentAddresses"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        let map, marker;
+        let selectedLat = null;
+        let selectedLng = null;
+        let selectedAddress = null;
+
+        function initMap() {
+            map = L.map('map').setView([32.08, 34.78], 13); // תל אביב
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+            map.on('click', async function (e) {
+                selectedLat = e.latlng.lat;
+                selectedLng = e.latlng.lng;
+
+                if (marker) map.removeLayer(marker);
+                marker = L.marker([selectedLat, selectedLng]).addTo(map);
+
+                const res = await fetch(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${selectedLat}&lon=${selectedLng}`);
+                const data = await res.json();
+                selectedAddress = data.display_name || "לא נמצאה כתובת";
+                document.getElementById("selected-address").textContent = selectedAddress;
+            });
+        }
+
+        async function sendAddress() {
+            if (!selectedAddress || !selectedLat || !selectedLng) {
+                alert("יש לבחור מיקום במפה קודם");
+                return;
+            }
+
+            const payload = {
+                location: selectedAddress,
+                latitude: selectedLat,
+                longitude: selectedLng,
+                structureTypeName: document.getElementById("structureTypeName").value,
+                structureTypeLevel: document.getElementById("structureTypeLevel").value,
+                isAlwaysOpen: document.getElementById("isAlwaysOpen").value === "true",
+                contactPerson: document.getElementById("contactPerson").value,
+                phone: document.getElementById("phone").value,
+                sms: document.getElementById("sms").value,
+                capacity: parseInt(document.getElementById("capacity").value),
+                currentPeople: parseInt(document.getElementById("currentPeople").value)
+            };
+
+            const res = await fetch("https://localhost:7132/api/address", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload)
+            });
+
+            const id = await res.text();
+            alert(res.ok ? "✅ כתובת נוספה. קוד: " + id : "❌ שגיאה בשליחה");
+        }
+
+        async function sendReview() {
+            const payload = {
+                location: document.getElementById("reviewAddressLocation").value,
+                Text: document.getElementById("reviewText").value,
+                Images: document.getElementById("reviewImages").value
+                    .split(",")
+                    .map(s => s.trim())
+                    .filter(x => x)
+            };
+
+            const res = await fetch("https://localhost:7132/api/address/add-review", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload)
+            });
+
+            alert(res.ok ? "✅ חוות דעת נוספה" : "❌ שגיאה בשליחה");
+        }
+
+        async function getRecentAddresses() {
+            const res = await fetch("https://localhost:7132/api/address/last-30-days");
+            const data = await res.json();
+
+            const container = document.getElementById("recentAddresses");
+            container.innerHTML = "";
+
+            data.forEach(addr => {
+                const div = document.createElement("div");
+                div.innerHTML = `<strong>${addr.location}</strong> (${addr.structureTypeName}, רמה: ${addr.structureTypeLevel})<br>
+                                     אנשים: ${addr.currentPeople}/${addr.capacity}<br>`;
+
+                if (addr.reviews && addr.reviews.length > 0) {
+                    addr.reviews.forEach(r => {
+                        div.innerHTML += `<p><strong>חוות דעת:</strong> ${r.text}</p>`;
+                        if (r.images && r.images.length > 0) {
+                            const imageHtml = r.images.map(name =>
+                                ` <img src="https://localhost:7132/NewFolder1/img1.jpg" alt="תמונה" />   `
+                            ).join('');
+                            div.innerHTML += `<div class="review-images">${imageHtml}</div>`;
+                        }
+                    });
+                }
+
+                div.innerHTML += "<hr>";
+                container.appendChild(div);
+            });
+        }
+
+        async function getClosestAddresses() {
+            if (!selectedLat || !selectedLng) {
+                alert("יש לבחור מיקום במפה קודם");
+                return;
+            }
+
+            const res = await fetch(`https://localhost:7132/api/address/closest?lat=${selectedLat}&lng=${selectedLng}`);
+            const data = await res.json();
+
+            const container = document.getElementById("closestAddresses");
+            container.innerHTML = "";
+
+            data.forEach(addr => {
+                const div = document.createElement("div");
+                div.innerHTML = `<strong>${addr.location}</strong> (${addr.structureTypeName}, רמה: ${addr.structureTypeLevel})<br>
+                                     מרחק: ${addr.distanceInKm.toFixed(2)} ק"מ<br>
+                                     אנשים: ${addr.currentPeople}/${addr.capacity}<hr>`;
+                container.appendChild(div);
+            });
+        }
+
+        window.onload = initMap;
+    </script>
+</body>
+</html>

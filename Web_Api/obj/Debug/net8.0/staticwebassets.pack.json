@@ -1,0 +1,85 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\User\\Desktop\\תהילה\\לימודים\\#c\\שעורי בית\\פרוייקט_סיכום_מיקומים\\Web_Api\\wwwroot\\NewFolder1\\img1.jpg",
+      "PackagePath": "staticwebassets\\NewFolder1\\img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\תהילה\\לימודים\\#c\\שעורי בית\\פרוייקט_סיכום_מיקומים\\Web_Api\\wwwroot\\NewFolder1\\img2.jpg",
+      "PackagePath": "staticwebassets\\NewFolder1\\img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\תהילה\\לימודים\\#c\\שעורי בית\\פרוייקט_סיכום_מיקומים\\Web_Api\\wwwroot\\NewFolder1\\img3.jpg",
+      "PackagePath": "staticwebassets\\NewFolder1\\img3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\תהילה\\לימודים\\#c\\שעורי בית\\פרוייקט_סיכום_מיקומים\\Web_Api\\wwwroot\\NewFolder1\\img4.jpg",
+      "PackagePath": "staticwebassets\\NewFolder1\\img4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\תהילה\\לימודים\\#c\\שעורי בית\\פרוייקט_סיכום_מיקומים\\Web_Api\\wwwroot\\NewFolder1\\img5.jpg",
+      "PackagePath": "staticwebassets\\NewFolder1\\img5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\תהילה\\לימודים\\#c\\שעורי בית\\פרוייקט_סיכום_מיקומים\\Web_Api\\wwwroot\\NewFolder1\\img6.jpg",
+      "PackagePath": "staticwebassets\\NewFolder1\\img6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\תהילה\\לימודים\\#c\\שעורי בית\\פרוייקט_סיכום_מיקומים\\Web_Api\\wwwroot\\NewFolder1\\img7.jpg",
+      "PackagePath": "staticwebassets\\NewFolder1\\img7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\תהילה\\לימודים\\#c\\שעורי בית\\פרוייקט_סיכום_מיקומים\\Web_Api\\wwwroot\\NewFolder1\\img8.jpg",
+      "PackagePath": "staticwebassets\\NewFolder1\\img8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\תהילה\\לימודים\\#c\\שעורי בית\\פרוייקט_סיכום_מיקומים\\Web_Api\\wwwroot\\NewFolder\\Flux_Dev_Create_realistic_images_of_abandoned_shelters_and_com_0.jpg",
+      "PackagePath": "staticwebassets\\NewFolder\\Flux_Dev_Create_realistic_images_of_abandoned_shelters_and_com_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\תהילה\\לימודים\\#c\\שעורי בית\\פרוייקט_סיכום_מיקומים\\Web_Api\\wwwroot\\NewFolder\\Flux_Dev_Create_realistic_images_of_abandoned_shelters_and_com_1.jpg",
+      "PackagePath": "staticwebassets\\NewFolder\\Flux_Dev_Create_realistic_images_of_abandoned_shelters_and_com_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\תהילה\\לימודים\\#c\\שעורי בית\\פרוייקט_סיכום_מיקומים\\Web_Api\\wwwroot\\NewFolder\\Flux_Dev_Create_realistic_images_of_abandoned_shelters_and_com_2.jpg",
+      "PackagePath": "staticwebassets\\NewFolder\\Flux_Dev_Create_realistic_images_of_abandoned_shelters_and_com_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\תהילה\\לימודים\\#c\\שעורי בית\\פרוייקט_סיכום_מיקומים\\Web_Api\\wwwroot\\NewFolder\\Flux_Dev_Create_realistic_images_of_abandoned_shelters_and_com_3.jpg",
+      "PackagePath": "staticwebassets\\NewFolder\\Flux_Dev_Create_realistic_images_of_abandoned_shelters_and_com_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\תהילה\\לימודים\\#c\\שעורי בית\\פרוייקט_סיכום_מיקומים\\Web_Api\\wwwroot\\NewFolder\\Flux_Dev_Create_realistic_images_of_bomb_shelters_and_safe_roo_0.jpg",
+      "PackagePath": "staticwebassets\\NewFolder\\Flux_Dev_Create_realistic_images_of_bomb_shelters_and_safe_roo_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\תהילה\\לימודים\\#c\\שעורי בית\\פרוייקט_סיכום_מיקומים\\Web_Api\\wwwroot\\NewFolder\\Flux_Dev_Create_realistic_images_of_bomb_shelters_and_safe_roo_3.jpg",
+      "PackagePath": "staticwebassets\\NewFolder\\Flux_Dev_Create_realistic_images_of_bomb_shelters_and_safe_roo_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\תהילה\\לימודים\\#c\\שעורי בית\\פרוייקט_סיכום_מיקומים\\Web_Api\\wwwroot\\NewFolder\\Flux_Dev_I_want_exterior_images_of_the_bunker_looking_like_a_t_2.jpg",
+      "PackagePath": "staticwebassets\\NewFolder\\Flux_Dev_I_want_exterior_images_of_the_bunker_looking_like_a_t_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\תהילה\\לימודים\\#c\\שעורי בית\\פרוייקט_סיכום_מיקומים\\Web_Api\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Web_Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Web_Api.props",
+      "PackagePath": "build\\Web_Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Web_Api.props",
+      "PackagePath": "buildMultiTargeting\\Web_Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Web_Api.props",
+      "PackagePath": "buildTransitive\\Web_Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
